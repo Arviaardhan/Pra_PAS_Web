@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CameraController;
 use App\Http\Controllers\HandphoneController;
 use App\Http\Controllers\LaptopController;
 use Illuminate\Support\Facades\Route;
@@ -30,4 +31,6 @@ Route::get('/handphone/detail/{handphone}', [HandphoneController::class, 'show']
 
 Route::get('/laptop.all', [LaptopController::class, 'index']);
 Route::get('/laptop/detail/{laptop}', [LaptopController::class, 'show']);
-    
+
+Route::get('/camera.all', [CameraController::class, 'index']);
+Route::get('/camera/detail/{camera}', [CameraController::class, 'show']);

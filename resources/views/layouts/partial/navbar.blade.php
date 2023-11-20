@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link @if(request()->is('students')) active @endif" href="/laptop.all">Laptops</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link @if(request()->is('students')) active @endif" href="/camera.all">Cameras</a>
+          </li>
         </ul>
       </div>
     </div>
